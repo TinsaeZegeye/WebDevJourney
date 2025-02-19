@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    text-align: center;
+}
+nav{
+    border: 2px solid tomato;
+    width: 600px;
+    border-radius: 45px;
+    margin: 0 auto;
+    font-size: 3em;
+    line-height: 2em;
+}
+h2{
+    background-color: brown;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    border-top:1px solid tomato;
+}
+li a{
+    display: block;
+}
+li a,
+li a:visited{
+    text-decoration: none;
+    color: black ;
+}
+li a:hover{
+    background-color: rgb(182, 53, 53);
+    cursor: pointer;
+}
+li:last-child a{
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
