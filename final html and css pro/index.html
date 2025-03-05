@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End Malaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="assets/logo2-removebg-preview 5.png" type="image/x-icon">
+</head>
+<body>
+    <div class="site-container">
+        <!-- Navigation Bar -->
+        <header class="site-header">
+            <div class="logo-section">
+                <img src="assets/logo2-removebg-preview 5.png" alt="End Malaria Organization Logo">
+            </div>
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="index.html">መግቢያ</a></li>
+                    <li><a href="#products">ምርታችን</a></li>
+                    <li><a href="#about-us">ስለ እኛ</a></li>
+                    <li><a href="#contact-us">አግኙን</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <p>
+                የወባ ትንኞችን ስርጭት ለመግታት እና እራስዎን ከወባ ለመጠበቅ የእኛን <span>አውቶማቲክ</span> የወባ ትንኝ  መከላኬያ መርጫ ይጠቀሙ
+            </p>
+            <a href="#products" class="call-to-action"><button class="action-button">ይበልጥ ለማወቅ</button></a>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="product-showcase">
+            <h1 class="section-title" id="products">ምርታችንን ይዘዙ</h1>
+            <div class="product-grid">
+                <div class="product-image">
+                    <img src="assets/product.png" alt="Main Product Image - Malaria Prevention Kit">
+                </div>
+                <div class="product-details">
+                    <p>የአጠቃቀም መረጃ</p>
+                    <div class="usage-guide">
+                        <img src="assets/end-malaria-manual.png" alt="Product Usage Manual">
+                        <ol>
+                            <li>የአሰራር ሁኔታ ለመከታተል</li>
+                            <li value="3">የማሳያውን ብርሃን ለመጨመር እና ለመቀነስ</li>
+                            <li value="2">ለማብራት እና ለማጥፋት</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section class="about-section">
+            <div class="about-content">
+                <h2 id="about-us">ስለ እኛ</h2>
+                <p>
+                    የወባ ስርጭትን በራስ ሰር እና ቀልጣፋ በመታገል የወባ ስርጭትን ለመግታት የሚረዳ አውቶማቲክ የወባ ትንኝ መከላከያ ማሽን በማምረት እና በማከፋፈል ላይ ያተኮረ አዲስ አበባ ላይ የተመሰረተ ቡድን ነን።
+                </p>
+                <a href="#contact-us" class="contact-button"><button class="btn-secondary">አግኙን</button></a>
+            </div>
+            <div class="about-image">
+                <img src="assets/product (3).png" alt="About Us Product Image - Team Working on Malaria Solutions">
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="action-message">
+                <h2>እራሰወን ከወባ ትንኝ ይከላከሉ</h2>
+                <p>ዛሬውኑ አውቶማቲክ የወባ ትንኝ መከላኬያ መርጫወን ያግኙኙ!</p>
+            </div>
+            <div class="action-button-container">
+                <a href="#order" class="action-button-link"><button class="btn-primary">ይዘዙ</button></a>
+            </div>
+        </section>
+
+        <!-- Order Product -->
+        <section class="order-section">
+            <div class="section-header">
+                <h2 id="order">ምርታችንን ይዘዙ</h2>
+            </div>
+            <div class="product-image-container">
+                <figure>
+                    <figcaption>የእቃው ምስል</figcaption>
+                    <img src="assets/Group 1000003405.png" alt="Malaria Prevention Product Image">
+                </figure>
+            </div>
+            <form action="#" method="post" class="order-form">
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="product-id">የእቃው መለያ</label>
+                        <input id="product-id" type="text" name="product_id" value="#On12345" disabled>
+                    </div>
+                    <div class="form-field">
+                        <label for="product-measure">መለኪያ *</label>
+                        <input id="product-measure" type="text" name="product_measure" value="ቁጥር" disabled>
+                    </div>
+                    <div class="form-field">
+                        <label for="region-name">ክልል *</label>
+                        <input id="region-name" type="text" name="region_name" placeholder="አፋር" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="woreda-name">ወረዳ *</label>
+                        <input id="woreda-name" type="text" name="woreda_name" placeholder="ዙሩ" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="order-quantity">የትእዛዝ ብዛት</label>
+                        <input id="order-quantity" type="number" name="order_number" min="1" value="1" step="1" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="unit-price">የእያንዳንዱ ዋጋ</label>
+                        <input id="unit-price" type="text" name="price_per_product" value="250ETB" disabled>
+                    </div>
+                    <div class="form-field">
+                        <label for="city-name">ከተማ *</label>
+                        <input id="city-name" type="text" name="city_name" placeholder="አሳያ" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="phone-number">ስልክ ቁጥር *</label>
+                        <input id="phone-number" type="tel" name="phone_number" placeholder="09******26" required>
+                    </div>
+                    <div class="form-field total-price">
+                        <label for="total-price">ጠቅላላ ዋጋ</label>
+                        <input id="total-price" type="text" name="total_price" value="250ETB" disabled>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="reset" class="reset-button">ይመለሱ</button>
+                    <button type="submit" class="submit-button">ይዘዙ</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer-section">
+            <div class="logo-media-links">
+                <div class="logo-section">
+                    <img src="assets/logo2-removebg-preview 5.png" alt="End Malaria Organization Logo">
+                </div>
+                <div class="media-links">
+                    <p>ያለስጋት ይኑሩ!</p>
+                    <div class="links">
+                        <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://t.me/yourusername" target="_blank" class="social-icon">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="page-links">
+                <p>ገጽ አገናኞች</p>
+                <ul>
+                    <li><a href="index.html">መግቢያ</a></li>
+                    <li><a href="#products">ምርታችን</a></li>
+                    <li><a href="#contact-us">ያግኙን</a></li>
+                    <li><a href="#about-us">ስለ እኛ</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <address class="contact-address">
+                    <p id="contact-us">እኛን ለማግኝት</p>
+                    <ul>
+                        <li><a href="mailto:endmalariae@gmail.com">endmalariae@gmail.com</a></li>
+                        <li><a href="https://www.endmalaria.com">www.endmalaria.com</a></li>
+                        <li><a href="tel:+251-9-56-98-21">+251-9-56-98-21</a></li>
+                    </ul>
+                </address>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
