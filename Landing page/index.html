@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitLife - Your Wellness Journey Starts Here</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">FitLife</a>
+    </div>
+  <button class="hamburger">
+      <i class="fas fa-bars"></i>
+  </button>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#nutrition">Nutrition Tips</a></li>
+      <li><a href="#workouts">Popular Workouts</a></li>
+      <li><a href="#testimonials">User Feedbacks</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="#countdown">Offer</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Transform Your Life with <span>FitLife</span></h1>
+      <p>Empower yourself with personalized wellness tips, fitness routines, and nutritional guidance.</p>
+      <button class="cta-button" id="getStartedBtn">Get Started</button>
+    </div>
+  </header>
+
+  <!-- Benefits Section -->
+  <section class="benefits reveal">
+    <h2>Why Choose FitLife?</h2>
+    <div class="benefit-items">
+      <div class="benefit">
+        <img src="images/fitness-icon.png" alt="Fitness Icon" />
+        <h3>Personalized Fitness Plans</h3>
+        <p>Workouts tailored to your goals, whether you're a beginner or a pro.</p>
+      </div>
+      <div class="benefit">
+        <img src="images/nutrition-icon.png" alt="Nutrition Icon" />
+        <h3>Nutrition Guides</h3>
+        <p>Get access to meal plans, healthy recipes, and expert tips on eating well.</p>
+      </div>
+      <div class="benefit">
+        <img src="images/wellness.png" alt="Wellness Icon" />
+        <h3>Mindfulness & Wellness</h3>
+        <p>Improve mental clarity with meditation practices and stress management techniques.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nutrition Tips Section -->
+  <section class="nutrition-tips" id="nutrition">
+    <h2>Nutrition Tips for a Healthy Lifestyle</h2>
+    <div class="nutrition-items">
+      <div class="nutrition-item">
+        <h3>Eat Whole Foods</h3>
+        <p>Focus on consuming foods in their natural state to maximize nutrient intake.</p>
+      </div>
+      <div class="nutrition-item">
+        <h3>Stay Hydrated</h3>
+        <p>Drink plenty of water throughout the day to keep your body functioning at its best.</p>
+      </div>
+      <div class="nutrition-item">
+        <h3>Portion Control</h3>
+        <p>Be mindful of your portion sizes, especially when eating calorie-dense foods.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Workouts Section -->
+  <section class="popular-workouts" id="workouts">
+    <h2>Popular Workouts</h2>
+    <div class="workout-items">
+      <div class="workout-item">
+        <img src="images/strength.png" alt="Strength Training" />
+        <h3>Strength Training</h3>
+        <p>Build muscle and improve your overall strength with these workout routines.</p>
+      </div>
+      <div class="workout-item">
+        <img src="images/cardio.png" alt="Cardio" />
+        <h3>Cardio</h3>
+        <p>Boost your heart health and endurance with cardio workouts like running or cycling.</p>
+      </div>
+      <div class="workout-item">
+        <img src="images/flexibility.png" alt="Flexibility" />
+        <h3>Flexibility</h3>
+        <p>Improve flexibility and prevent injury with daily stretching routines.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials reveal" id="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial">
+        <p>"FitLife helped me lose 10kg in 3 months! The workouts are fun and easy to follow."</p>
+        <h4>— Selam A.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"I finally found a meal plan I enjoy. The recipes are delicious and healthy!"</p>
+        <h4>— Dawit M.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"The mindfulness exercises helped me reduce stress and sleep better at night."</p>
+        <h4>— Hiwot T.</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact">
+    <div class="form-container">
+      <form id="contactForm">
+        <h2>Contact Us</h2>
+        <input type="text" id="contactName" placeholder="Your Name" required />
+        <input type="email" id="contactEmail" placeholder="Your Email" required />
+        <textarea id="contactMessage" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="thankYouMessage" class="thank-you-message" style="display: none;">
+        <p>Thank you for contacting us! We'll get back to you soon.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Countdown Section -->
+  <section class="countdown" id="countdown">
+    <h2>Special Offer: Join Now!</h2>
+    <p>Sign up within the next <span id="timer">24 hours</span> to get 20% off your first month!</p>
+  </section>
+
+  <!-- Modal Form -->
+  <div id="popupForm" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Join FitLife</h2>
+      <form id="joinForm">
+        <label for="modalName">Name:</label>
+        <input type="text" id="modalName" required />
+
+        <label for="modalEmail">Email:</label>
+        <input type="email" id="modalEmail" required />
+
+        <label for="modalGoal">Fitness Goal:</label>
+        <input type="text" id="modalGoal" />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollToTop" title="Go to top" style="display: none;">&uarr;</button>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>About FitLife</h3>
+        <p>Your all-in-one platform for fitness, nutrition, and wellness. Stay fit, eat healthy, and live mindfully.</p>
+      </div>
+  
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#nutrition">Nutrition Tips</a></li>
+          <li><a href="#workouts">Popular Workouts</a></li>
+          <li><a href="#testimonials">User Feedbacks</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="https://facebook.com/FitLifeOfficial" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/FitLifeUpdates" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com/FitLifeDaily" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://linkedin.com/company/fitlife-health" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://youtube.com/@FitLifeGuides" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentYear"></span> FitLife. All rights reserved.</p>
+      <p>Designed by Tinsae Zegeye</p>
+    </div>
+  </footer>  
+</body>
+</html>
