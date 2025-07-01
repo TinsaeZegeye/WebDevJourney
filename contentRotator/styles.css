@@ -1,0 +1,16 @@
+#quotes {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: burlywood;
+    width: 700px;
+    height: 100px;
+}
+#quotes h3 {
+    color: brown;
+    font-size: large;
+    padding: 4px;
+}
+
+#quotes p {
+    display: none;
+}
