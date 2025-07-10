@@ -1,0 +1,133 @@
+/* === Reset and Base === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  line-height: 1.6;
+  padding-top: 80px; /* space for fixed nav */
+}
+
+/* === Navigation Bar === */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 10px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav img {
+  height: 50px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background-color: #e0e0e0;
+}
+
+nav ul li a:hover {
+  background-color: #545bbe;
+  color: white;
+}
+
+/* === Sections === */
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+section {
+  background-color: #fffdf8;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  width: 90%;
+}
+
+section h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #2b2b2b;
+}
+
+/* === Content Layout === */
+section div {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section img {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border: 1px solid #ccc;
+}
+
+section p {
+  max-width: 500px;
+  color: #333;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.selected {
+   background-color: #545bbe;
+   color: white;
+}
+
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  section div {
+    flex-direction: column;
+  }
+
+  section {
+    width: 95%;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
