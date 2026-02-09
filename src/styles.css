@@ -1,0 +1,157 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Page Container */
+.container {
+  margin: 3% 8%;
+  padding: 20px;
+  border: #123456 1px solid;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Header */
+header h1 {
+  color: #123456;
+  font-size: 1.7rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+header span {
+  background-color: #123456;
+  color: #f0f0f0;
+  padding: 2px 6px;
+  margin: 0 4px;
+  border-radius: 5px;
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Card */
+.card {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  border: #787878 1px solid;
+  border-radius: 10px;
+  padding: 15px;
+  gap: 1.2rem;
+  box-shadow: 3px 3px 3px #787878;
+}
+
+/* Card Header */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 20px;
+}
+
+.developer h3 {
+  font-size: 1.2rem;
+  color: #123456;
+}
+
+.developer p {
+  font-size: 0.85rem;
+  color: #123456;
+}
+
+.img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: #123456 1px solid;
+}
+
+/* Card Main */
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.main p {
+  font-family: "Courier New", Courier, monospace;
+  color: #123456;
+  font-size: 0.9rem;
+}
+
+.location {
+  font-weight: bold;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill {
+  padding: 4px 8px;
+  border: #123456 1px solid;
+  border-radius: 5px;
+  font-size: 0.75rem;
+  color: #123456;
+}
+
+/* Social */
+.social {
+  display: flex;
+  align-self: center;
+  gap: 20px;
+  font-size: 1.3rem;
+  color: #123456;
+}
+
+.social a {
+  color: #123456;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-in-out;  
+}
+
+.social a:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* Button */
+.btn {
+  align-self: center;
+  background-color: #123456;
+  color: #f0f0f0;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  font-size: 12px;
+  font-family: "Courier New", Courier, monospace;
+  color: #123456;
+}
